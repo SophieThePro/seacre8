@@ -1,0 +1,223 @@
+/* -------------------------------
+   GENERAL RESET + BASE STYLES
+   ------------------------------- */
+
+/* SEO: Reset box‑sizing so layout is predictable and mobile‑friendly */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: #222;           /* Dark text for good readability */
+  background-color: #f8f9fa; /* Soft light background for trust */
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* -------------------------------
+   HEADER: BRAND + SEO AREA
+   ------------------------------- */
+
+.header {
+  background-color: #005073; /* Deep blue / ocean teal for trust */
+  color: white;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.header h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  /* SEO: Large, keyword‑rich H1 */
+}
+
+.header .tagline {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin-bottom: 1.5rem;
+}
+
+.start-order {
+  display: inline-block;
+  padding: 10px 24px;
+  background-color: #00a8cc; /* Teal button that stands out */
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 500;
+  /* SEO: Clear call‑to‑action button helps Google see this page as conversion‑oriented */
+}
+
+/* -------------------------------
+   SECTIONS: CONTENT LAYOUT
+   ------------------------------- */
+
+.section {
+  padding: 40px 0;
+}
+
+.section h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+  color: #005073; /* Deep blue for headings */
+}
+
+.section p,
+.section ul {
+  margin-bottom: 1rem;
+}
+
+/* SEO: Product sections have light background to visually separate them */
+.section-products {
+  background-color: #f0f8ff; /* Very light blue for cohesion */
+}
+
+/* -------------------------------
+   TRUST LIST + SEGMENTS
+   ------------------------------- */
+
+.trust-list {
+  list-style: none;
+}
+
+.trust-list li {
+  position: relative;
+  padding-left: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.trust-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: #00a8cc;
+}
+
+/* Segments area: slightly more contrast than products */
+.section-segments {
+  background-color: #e8f4f8;
+}
+
+/* -------------------------------
+   ORDER FORM STYLES
+   ------------------------------- */
+
+.section-form {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.section-form h2 {
+  margin-bottom: 1.2rem;
+}
+
+label {
+  display: block;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.btn.submit-form {
+  display: block;
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #005073;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn.submit-form:hover {
+  background-color: #00334d;
+}
+
+/* -------------------------------
+   FOOTER STYLES
+   ------------------------------- */
+
+.footer {
+  background-color: #002233;
+  color: #ccc;
+  padding: 20px 0;
+  font-size: 0.9rem;
+}
+
+.footer a {
+  color: #00a8cc;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* -------------------------------
+   RESPONSIVE / MOBILE LAYOUT
+   ------------------------------- */
+
+/* GEO: Mobile‑first layout improves mobile‑friendliness signals */
+@media (max-width: 768px) {
+  .header {
+    padding: 30px 10px;
+  }
+
+  .header h1 {
+    font-size: 1.5rem;
+  }
+
+  .header .tagline,
+  .start-order {
+    font-size: 0.95rem;
+  }
+
+  .section {
+    padding: 25px 0;
+  }
+
+  .section-form {
+    padding: 20px 15px;
+  }
+
+  label,
+  input,
+  select,
+  textarea {
+    font-size: 1rem;
+  }
+
+  .btn.submit-form {
+    font-size: 1rem;
+  }
+
+  .footer {
+    font-size: 0.85rem;
+  }
+}
